@@ -1,7 +1,7 @@
 * {margin: 0;
     padding: 0;}
     
-    html, body {font-family: Helvetica, sans-serif;
+    html, body {
     font-size: 22px;
     background-color: black;
     height: 100%;
@@ -18,13 +18,20 @@
     padding-top: 0;
     z-index: 1;}
     
-    ul {list-style-type: none;
-    }
+    ul {list-style-type: none;}
     
     li {display: inline-flex;
-    margin-right: 20px;
+    margin-right: 20px;}
+
+    a {text-decoration: none;
     color: seashell;
     opacity: 0.6;}
+
+    a:visited {color: seashell;
+    opacity: 0.6;}
+      
+    a:hover {color: sandybrown;
+    transition-duration: 0.7s;}
     
     nav {width: 100%;
       display: flex;
@@ -100,6 +107,11 @@
     margin-left: 40px;
     margin-right: 40px;
     }
+    
+    .box:hover {width: 320px;
+    height:320px;
+    transition-duration: 0.5s;}
+
     .locations {background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*2d1fx2*_ga*NjgxNjcwMzg1My4xNjk5MjEyODU0*_ga_3LRZM6TM9L*MTY5OTgwNzMzMS4yMi4wLjE2OTk4MDczMzEuMC4wLjA.");
     background-size: cover;
     display: flex;
